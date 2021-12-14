@@ -15,11 +15,10 @@ body{
 
 ul{
 	list-style-type:  none;
-
 }
 
 section{
-	margin:  30px 0px;
+	margin: 2em 0;
 }
 
 #left, #right{
@@ -28,7 +27,7 @@ section{
 }
 
 #left{
-	background-color: rgb(5, 4, 97);
+	background-color: rgb(1,48,72);
 	max-width: 310px;
 	color:  rgb(245, 245, 245);;
 }
@@ -63,4 +62,12 @@ section{
 	color:  gray;
 	text-transform: uppercase;
 	font-weight: bolder;
+}
+
+.experience-tools{
+	margin-top: 0.5em;
+}
+
+.experience-tools span{
+	font-weight: bold;
 }
