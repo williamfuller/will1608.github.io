@@ -138,3 +138,22 @@ i{
 .experience-tools span{
 	font-weight: bold;
 }
+
+.skills-list{
+	width: 100%;
+	display: inline-block;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.skills-list div{
+
+	margin: 0.7em;
+	padding: 0.5em;
+	width:  fit-content;
+	height: fit-content;
+	font-size:0.9em;
+	font-weight: bold;
+	background-color: rgb(225,225, 225);
+	border-radius: 5%;
+}
