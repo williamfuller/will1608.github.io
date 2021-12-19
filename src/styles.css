@@ -19,7 +19,7 @@ ul{
 }
 
 section{
-	margin: 2em 0 3.5em 0;
+	margin: 2em 0;
 }
 
 a {
@@ -83,11 +83,11 @@ i{
 	color: rgb(200,200,200);
 }
 
-.left-section-title{
+.left-section-title, .right-section-title{
+	font-weight: 900;
 	margin-bottom: 1em;
 	text-transform: uppercase;
-	font-size: 0.8em;
-	letter-spacing: 0.15em;
+	letter-spacing: 0.1em;
 }
 
 #contact-info-list li{
