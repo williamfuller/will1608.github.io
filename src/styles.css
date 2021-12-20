@@ -6,8 +6,8 @@
 }
 
 body{
-	background: rgb(15,89,232);
-	background: linear-gradient(90deg, rgba(15,89,232,1) 35%, rgba(8,199,237,1) 100%);
+	background: rgb(36,33,78);
+	background: radial-gradient(circle, rgba(36,33,78,1) 0%, rgba(34,34,107,1) 35%, rgba(163,220,242,1) 100%);
 	display:  flex;
 	justify-content:  center;
 	min-height: 100vh;
@@ -19,7 +19,7 @@ ul{
 }
 
 section{
-	margin: 1.8em 0;
+	margin: 1em 0 3em 0;
 }
 
 a {
@@ -90,11 +90,20 @@ i{
 	letter-spacing: 0.08em;
 }
 
-#contact-info-list li{
+#contact-info-list li, #skills-list li{
 	display: flex;
-	font-size: 0.7em;
 	margin-bottom: 1em;
+
+}
+
+#contact-info-list{
+	font-size: 0.7em;
 	color: rgb(200,200,200);
+
+}
+
+#skills-list{
+	font-size: 0.85em;
 
 }
 
