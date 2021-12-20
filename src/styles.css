@@ -6,7 +6,8 @@
 }
 
 body{
-	background-color: lightblue;
+	background: rgb(15,89,232);
+	background: linear-gradient(90deg, rgba(15,89,232,1) 35%, rgba(8,199,237,1) 100%);
 	display:  flex;
 	justify-content:  center;
 	min-height: 100vh;
@@ -38,10 +39,8 @@ i{
 	margin:  2em 0;
 }
 
-/*FIX change px to em or rem*/
 #left, #right{
-	padding: 20px;
-	margin:  30px 0px;
+	padding: 1.5em;
 }
 
 #left{
@@ -88,7 +87,7 @@ i{
 	font-size: 0.7em;
 	margin-bottom: 1em;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.08em;
 }
 
 #contact-info-list li{
