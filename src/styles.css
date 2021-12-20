@@ -3,7 +3,6 @@
 	padding:0;
 	margin: 0;
 	box-sizing: border-box;
-	font-size: 0.993em;
 }
 
 body{
@@ -19,7 +18,7 @@ ul{
 }
 
 section{
-	margin: 2em 0;
+	margin: 1.8em 0;
 }
 
 a {
@@ -39,6 +38,7 @@ i{
 	margin:  2em 0;
 }
 
+/*FIX change px to em or rem*/
 #left, #right{
 	padding: 20px;
 	margin:  30px 0px;
@@ -74,7 +74,7 @@ i{
 
 #name{
 	font-weight: bolder;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #personal-title{
@@ -85,6 +85,7 @@ i{
 
 .left-section-title, .right-section-title{
 	font-weight: 900;
+	font-size: 0.7em;
 	margin-bottom: 1em;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -92,7 +93,7 @@ i{
 
 #contact-info-list li{
 	display: flex;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	margin-bottom: 1em;
 	color: rgb(200,200,200);
 
@@ -104,31 +105,43 @@ i{
 
 .education-dates{
 	color:  rgb(63, 197, 233);
-	font-size:  0.8em;
+	font-size:  0.7em;
+}
+
+.education-degree{
+	font-size: 0.85em;
 }
 
 .education-institution{
-	font-size:  0.8em;
+	font-size:  0.7em;
 	font-style: italic;
 }
 
+/*Change px to em or rem*/
 .experience-list-element{
 	display: flex;
 	justify-content: center;
-	padding: 20px 0px 20px 0px;
+	padding: 1em 0;
 }
-
+/*Change px to em or rem*/
 .experience-list-element-left{
-	margin: 0 40px 10px 40px; 
+	margin: 0 2em 0.8em 2em; 
 }
 
 .experience-list-element-right .job-title{
 	color:  rgb(63, 197, 233);
+	font-size: 0.9em;
 }
+
 .dates, .company-name{
-	color:  gray;
+	font-size: 0.9em;
+	color: gray;
 	text-transform: uppercase;
 	font-weight: bolder;
+}
+
+.experience-tools, .experience-description{
+	font-size: 0.85em;
 }
 
 .experience-tools{
@@ -152,7 +165,7 @@ i{
 	padding: 0.5em;
 	width:  fit-content;
 	height: fit-content;
-	font-size:0.9em;
+	font-size:0.8em;
 	font-weight: bold;
 	background-color: rgb(225,225, 225);
 	border-radius: 5%;
