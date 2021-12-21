@@ -93,7 +93,6 @@ i{
 #contact-info-list li, #skills-list li{
 	display: flex;
 	margin-bottom: 1em;
-
 }
 
 #contact-info-list{
@@ -111,27 +110,26 @@ i{
 	margin-bottom: 1em;
 }
 
-.education-dates{
+.education-dates, .award-dates{
 	color:  rgb(63, 197, 233);
 	font-size:  0.7em;
 }
 
-.education-degree{
+.education-degree, .award-name{
 	font-size: 0.85em;
 }
 
-.education-institution{
+.education-institution, .award-description{
 	font-size:  0.7em;
 	font-style: italic;
 }
 
-/*Change px to em or rem*/
 .experience-list-element{
 	display: flex;
 	justify-content: center;
 	padding: 1em 0;
 }
-/*Change px to em or rem*/
+
 .experience-list-element-left{
 	margin: 0 2em 0.8em 2em; 
 }
@@ -150,6 +148,12 @@ i{
 
 .experience-tools, .experience-description{
 	font-size: 0.85em;
+}
+
+.experience-description{
+	margin-top: 1em;
+	margin-left: 1em;
+	list-style-type: initial;
 }
 
 .experience-tools{
