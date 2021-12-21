@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	/*VARIABLE DEFINITION*/
+:root{
+	--dark-blue: rgb(1,48,72);
+	--light-gray:  rgb(245, 245, 245);
+	--blue: rgb(63, 197, 233);
+	--gray:  rgb(200,200,200);
+}
+	/*GENERAL SETUP FOR PAGE*/
+
 *{
 	padding:0;
 	margin: 0;
@@ -24,7 +33,11 @@ a {
 
 i{
 	margin-right: 0.5em;
-	color: rgb(63, 197, 233);
+	color: var(--blue);
+}
+
+p{
+	font-size: 0.85em;
 }
 
 #main-page{
@@ -39,13 +52,13 @@ i{
 }
 
 #left{
-	background-color: rgb(1,48,72);
-	color:  rgb(245, 245, 245);
+	background-color: var(--dark-blue);
+	color:  var(--light-gray);
 	width: 30%;
 }
 
 #right{
-	background-color: rgb(245, 245, 245);
+	background-color: var(--light-gray);
 	width: 70%;
 }
 
@@ -82,11 +95,10 @@ i{
 #personal-title{
 	margin-top: 1em;
 	font-size: 0.8em;
-	color: rgb(200,200,200);
+	color: var(--gray);
 }
-
-.left-section-title, .right-section-title{
-	font-size: 0.7em;
+.left-section-title, .right-section-title
+{
 	margin-bottom: 1em;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
@@ -101,15 +113,18 @@ i{
 	margin-bottom: 1em;
 }
 
-#contact-info-list{
+.education-dates, 
+.award-dates, 
+#contact-info-list, 
+.education-institution, 
+.award-description,
+.left-section-title, 
+.right-section-title{
 	font-size: 0.7em;
-	color: rgb(200,200,200);
-
 }
 
-#skills-list{
-	font-size: 0.85em;
-
+#contact-info-list{
+	color: var(--gray);
 }
 
 .education-list-element{
@@ -117,8 +132,7 @@ i{
 }
 
 .education-dates, .award-dates{
-	color:  rgb(63, 197, 233);
-	font-size:  0.7em;
+	color:  var(--blue);
 }
 
 .education-degree, .award-name{
@@ -126,7 +140,6 @@ i{
 }
 
 .education-institution, .award-description{
-	font-size:  0.7em;
 	font-style: italic;
 }
 
@@ -149,14 +162,14 @@ i{
 }
 
 .company-location-container{
-	color: rgb(63, 197, 233);
+	color:  var(--blue);
 	padding-top: 0.5em;
 	padding-left: 1em;
 	display: flex;
 }
 
 .experience-company{
-	border-right: 0.15em solid rgb(63, 197, 233);
+	border-right: 0.15em solid  var(--blue);;
 	padding-right: 0.4em;
 }
 .experience-location {
@@ -164,16 +177,10 @@ i{
 }
 
 .experience-dates{
-	font-size: 0.9em;
 	color: gray;
 	text-transform: uppercase;
 	font-weight: bolder;
 }
-
-.experience-tools, .experience-description{
-	font-size: 0.85em;
-}
-
 .experience-description{
 	margin-top: 1em;
 	margin-left: 1em;
@@ -195,14 +202,12 @@ i{
 	flex-flow: row wrap;
 }
 
-.skills-list div{
-
+.skills-list p{
 	margin: 0.7em;
 	padding: 0.5em;
 	width:  fit-content;
 	height: fit-content;
-	font-size:0.8em;
 	font-weight: bold;
-	background-color: rgb(225,225, 225);
+	background-color: rgb(225,225,225);
 	border-radius: 5%;
 }
