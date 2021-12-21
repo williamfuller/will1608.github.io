@@ -6,8 +6,7 @@
 }
 
 body{
-	background: rgb(36,33,78);
-	background: radial-gradient(circle, rgba(36,33,78,1) 0%, rgba(34,34,107,1) 35%, rgba(163,220,242,1) 100%);
+	background-color: lightblue;
 	display:  flex;
 	justify-content:  center;
 	min-height: 100vh;
@@ -16,10 +15,6 @@ body{
 
 ul{
 	list-style-type:  none;
-}
-
-section{
-	margin: 1em 0 3.5em 0;
 }
 
 a {
@@ -54,6 +49,14 @@ i{
 	width: 70%;
 }
 
+.right-section{
+	margin: 1em 0;
+}
+
+.left-section{
+	margin: 1em 0 3.5em 0;
+}
+
 #profile-picture{
 	padding:  0 0.5em 0 0.5em;
 }
@@ -83,11 +86,14 @@ i{
 }
 
 .left-section-title, .right-section-title{
-	font-weight: 900;
 	font-size: 0.7em;
 	margin-bottom: 1em;
 	text-transform: uppercase;
-	letter-spacing: 0.08em;
+	letter-spacing: 0.3em;
+}
+
+.right-section-title{
+	color: gray;
 }
 
 #contact-info-list li, #skills-list li{
@@ -131,15 +137,33 @@ i{
 }
 
 .experience-list-element-left{
-	margin: 0 2em 0.8em 2em; 
+	padding-top: 1em;
+	padding-right: 3em;
+	font-size: 0.85em;
+	flex: 0.5;
+	text-align: center;
 }
 
-.experience-list-element-right .job-title{
-	color:  rgb(63, 197, 233);
-	font-size: 0.9em;
+.experience-list-element-right{
+	flex: 3;
 }
 
-.dates, .company-name{
+.company-location-container{
+	color: rgb(63, 197, 233);
+	padding-top: 0.5em;
+	padding-left: 1em;
+	display: flex;
+}
+
+.experience-company{
+	border-right: 0.15em solid rgb(63, 197, 233);
+	padding-right: 0.4em;
+}
+.experience-location {
+	padding-left: 0.4em;
+}
+
+.experience-dates{
 	font-size: 0.9em;
 	color: gray;
 	text-transform: uppercase;
@@ -153,7 +177,7 @@ i{
 .experience-description{
 	margin-top: 1em;
 	margin-left: 1em;
-	list-style-type: initial;
+ 	list-style-type: circle;
 }
 
 .experience-tools{
