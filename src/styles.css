@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	/*VARIABLE DEFINITION*/
+:root{
+	--dark-blue: rgb(1,48,72);
+	--light-gray:  rgb(245, 245, 245);
+	--blue: rgb(63, 197, 233);
+	--gray:  rgb(200,200,200);
+}
+	/*GENERAL SETUP FOR PAGE*/
+
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: lightblue;
+	display:  flex;
+	justify-content:  center;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul{
+	list-style-type:  none;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+i{
+	margin-right: 0.5em;
+	color: var(--blue);
+}
+
+p{
+	font-size: 0.85em;
+	line-height: 1.5em;
+}
+
+#main-page{
+	width:  210mm;
+	height: 297mm;
+	display: flex;
+	margin:  2em 0;
+	flex-wrap: wrap;
+}
+
+#left, #right{
+	padding: 1.5em;
+}
+
+#left{
+	background-color: var(--dark-blue);
+	color:  var(--light-gray);
+	width: 30%;
+}
+
+#right{
+	background-color: var(--light-gray);
+	width: 70%;
+}
+
+.right-section{
+	margin: 1em 0;
+}
+
+.left-section{
+	margin: 1em 0 3.5em 0;
+}
+
+#profile-picture{
+	padding:  0 0.5em 0 0.5em;
+}
+
+#profile-picture img{
+
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+#name-personaltitle{
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 1em;
+	border-bottom: 0.2mm solid rgba(255, 255, 255, 0.2) ;
+}
+
+#name{
+	font-weight: bolder;
+	font-size: 1em;
+}
+
+#personal-title{
+	margin-top: 1em;
+	font-size: 0.8em;
+	color: var(--gray);
+}
+.left-section-title, .right-section-title
+{
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+.right-section-title{
+	color: gray;
+}
+
+#contact-info-list li, #skills-list li{
+	display: flex;
+	margin-bottom: 1em;
+}
+
+.education-dates, 
+.award-dates, 
+#contact-info-list, 
+.education-institution, 
+.award-description,
+.left-section-title, 
+.right-section-title{
+	font-size: 0.7em;
+}
+
+#contact-info-list{
+	color: var(--gray);
+}
+
+.education-list-element{
+	margin-bottom: 1em;
+}
+
+.education-dates, .award-dates{
+	color:  var(--blue);
+}
+
+.education-degree, .award-name{
+	font-size: 0.85em;
+}
+
+.education-institution, .award-description{
+	font-style: italic;
+}
+
+.experience-list-element{
+	display: flex;
+	justify-content: center;
+	padding: 1em 0;
+}
+
+.experience-list-element-left{
+	padding-top: 1em;
+	padding-right: 3em;
+	font-size: 0.85em;
+	flex: 0.5;
+	text-align: center;
+}
+
+.experience-list-element-right{
+	flex: 3;
+}
+
+.company-location-container{
+	color:  var(--blue);
+	padding-top: 0.5em;
+	padding-left: 1em;
+	display: flex;
+}
+
+.experience-company{
+	border-right: 0.15em solid  var(--blue);;
+	padding-right: 0.4em;
+}
+.experience-location {
+	padding-left: 0.4em;
+}
+
+.experience-dates{
+	color: gray;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.experience-description{
+	margin-top: 1em;
+	margin-left: 1em;
+ 	list-style-type: circle;
+}
+
+.experience-tools{
+	margin-top: 0.5em;
+}
+
+.experience-tools span{
+	font-weight: bold;
+}
+
+.skills-list{
+	width: 100%;
+	display: inline-block;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.skills-list p{
+	margin: 0.7em;
+	padding: 0.5em;
+	width:  fit-content;
+	height: fit-content;
+	font-weight: bold;
+	background-color: rgb(225,225,225);
+	border-radius: 5%;
+}
+
+.award-name{
+	font-weight: bold;
+}
