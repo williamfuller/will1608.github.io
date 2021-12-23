@@ -46,6 +46,7 @@ p{
 	height: 297mm;
 	display: flex;
 	margin:  2em 0;
+	flex-wrap: wrap;
 }
 
 #left, #right{
@@ -76,8 +77,9 @@ p{
 }
 
 #profile-picture img{
-	max-height:  100%;
-	max-width:  100%;
+
+	width:  180px;
+	height: 180px;
 	border-radius: 50%;
 }
 
@@ -211,4 +213,8 @@ p{
 	font-weight: bold;
 	background-color: rgb(225,225,225);
 	border-radius: 5%;
+}
+
+.award-name{
+	font-weight: bold;
 }
