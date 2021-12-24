@@ -77,7 +77,6 @@ p{
 }
 
 #profile-picture img{
-
 	max-height: 100%;
 	max-width: 100%;
 	border-radius: 50%;
@@ -217,4 +216,26 @@ p{
 
 .award-name{
 	font-weight: bold;
+}
+
+/*Tablets and Phones*/
+@media only screen
+and (max-device-width:  725px){
+
+	#main-page{
+		margin:0;
+	}
+
+	#left, #right{
+		width: 100%;
+	}
+
+	.left-section, .right-section-title{
+		text-align: center;
+	}
+
+	#left li{
+		display: inline-block;
+		padding-left:  0.5em;
+	}
 }
