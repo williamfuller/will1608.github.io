@@ -6,20 +6,19 @@
 	--blue: rgb(63, 197, 233);
 	--gray:  rgb(200,200,200);
 }
-	/*GENERAL SETUP FOR PAGE*/
+	
+/*GENERAL SETUP FOR PAGE*/
 
 *{
 	padding:0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+
 }
 
 body{
-	background-color: lightblue;
-	display:  flex;
-	justify-content:  center;
-	min-height: 100vh;
-	font-family: 'Roboto', sans-serif;
+	background-color: pink;
 }
 
 ul{
@@ -31,6 +30,7 @@ a {
   text-decoration: inherit; 
 }
 
+
 i{
 	margin-right: 0.5em;
 	color: var(--blue);
@@ -39,6 +39,44 @@ i{
 p{
 	font-size: 0.85em;
 	line-height: 1.5em;
+}
+
+/*header and navigation bar styling*/
+
+header{
+	background-color: rgba(255,255,255,0.5);
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav ul li{
+	margin-left: 1em;
+}
+
+button{
+	border: none;
+	background-color: var(--dark-blue);
+	color: var(--light-gray);
+	padding: 0.5em 1em;
+	display: inline-block;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+/*main content and cv styling*/
+
+#main-content{
+	display:  flex;
+	justify-content:  center;
+	min-height: 100vh;
 }
 
 #main-page{
