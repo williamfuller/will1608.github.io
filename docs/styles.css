@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
 	/*VARIABLE DEFINITION*/
 :root{
 	--dark-blue: rgb(1,48,72);
-	--light-gray:  rgb(245, 245, 245);
+	--light-gray: rgb(245, 245, 245);
 	--blue: rgb(81, 178, 204);
 	--gray:  rgb(200,200,200);
 }
@@ -13,12 +15,8 @@
 	padding:0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, sans-serif;
 
-}
-
-body{
-	background-color: #FFF;
 }
 
 ul{
@@ -42,18 +40,19 @@ p{
 
 /*header and navigation bar styling*/
 nav{
-  background-color: #FFF;
+  background-color: var(--light-gray);
   position: fixed;
   width: 100%;
-  border-bottom: 2px solid var(--dark-blue);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--dark-blue);
 }
 
 nav ul{
   overflow: hidden;
   color: #000;
-  font-weight: 600 ;
+  font-weight: 600;
   display: flex;
 }
 
@@ -61,17 +60,17 @@ nav ul li{
 	maring: 0;
 }
 
-nav ul li a{
+nav a{
 	display: block;
 	text-align: center;
 	padding: 1em;
 }
 
-#main-nav li a{
+#main-nav a{
 	border-right: 2px solid var(--dark-blue);
 }
 
-#page-specific-nav li a{
+#page-specific-nav a{
 	border-left: 2px solid var(--dark-blue);
 }
 
@@ -79,17 +78,27 @@ nav ul li a:hover{
   background-color: var(--dark-blue);
   color: var(--blue);
 }
+
+#logo a{
+	font-family: Oswald, sans-serif;
+	color: var(--blue);
+	font-size: 1.5em;
+  font-weight: 800;
+  padding: 0;
+  padding-left: 1em;
+  text-transform: uppercase;
+}
+
 /*main content and cv styling*/
 
 #main-content{
 	padding-top: 3em;
 	display:  flex;
 	justify-content:  center;
-	min-height: 100vh;
 }
 
 #main-page{
-	width:  210mm;
+	width: 210mm;
 	height: 297mm;
 	display: flex;
 	margin:  2em 0;
