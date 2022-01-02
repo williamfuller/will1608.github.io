@@ -1,4 +1,4 @@
-#About this website
+# About this website
 
 This is my personal website / portofolio.
 Made for fun and to practice my front-end development skills 😃
