@@ -6,8 +6,13 @@ module.exports = {
     './*.html',
   ],
   theme: {
-    extend: {},
-
+    extend: {
+      colors: {
+        darkBlue: {
+          500: '#013048',
+        },
+      }
+    },
   },
   variants: {},
   plugins: [
