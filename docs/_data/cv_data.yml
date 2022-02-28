@@ -49,4 +49,17 @@ skills:
       list: ['English', 'French', 'Spanish']
       level: ['Native', 'Native', 'B1']
 Awards:
+    - title: Javascript Algorithms and Data Structures
+      date: 2021
+      issuer: FreeCodeCamp
+      description: Developer Certification, representing approximately 300 hours of coursework
+    - title: Responsive Web Development
+      date: 2021
+      issuer: FreeCodeCamp
+      description: Developer Certification, representing approximately 300 hours of coursework
+    - title: IET prize
+      date: 2018
+      issuer: University of Kent
+      description: Obtained for distinguished performance on an IET accredited course
+
  
