@@ -2,53 +2,66 @@
 layout: default
 ---
 
+{% assign cv_data = site.data.cv_data %}
 
 <div class="bg-darkBlue-500 text-white text-center py-9">
     <img class="mx-auto rounded-full" src="../assets/img/profil_pic.jpeg" alt="My Profil picture">
 
-    <section class="pt-12 pb-6 border-b border-gray-600 w-10/12 mx-auto">
-        <h1 class="uppercase font-bold text-2xl">{{page.full_name}}</h1>
-        <h2 class="uppercase mt-4 text-xs text-gray-300">{{page.personal_title}}</h2>
+    <section class="py-8 pb-6 border-b border-gray-600 w-10/12 mx-auto">
+        <h1 class="uppercase font-bold text-2xl">{{cv_data.full_name}}</h1>
+        <h2 class="uppercase mt-4 text-xs text-gray-300">{{cv_data.personal_title}}</h2>
     </section>
 
-    <section class="my-12">
+    <section class="py-8">
         <h2 class="uppercase text-l font-bold pb-4 tracking-widest">Contact Info</h2>
-        <ul class="text-xs">
-            <li><i class="mr-2 text-cyan-500 fa-solid fa-envelope"></i> {{site.email}}</li>
-            <li><i class="mr-2 text-cyan-500 fa-brands fa-linkedin-in"></i> <a href="{{page.linkedin}}"></a>{{page.linkedin}}</li>
-            <li><i class="mr-2 text-cyan-500 fa-brands fa-github"></i> <a href="{{page.github}}"></a>{{page.github}}</li>
-            <li><i class="mr-2 text-cyan-500 fa-solid fa-location-dot"></i> <a href="{{page.location}}"></a>{{page.location}}</li>
+        <ul class="text-xs text-left inline-block mx-auto">
+            <li><i class="mb-2 text-cyan-500 fa-solid fa-envelope"></i> {{site.email}}</li>
+            <li><i class="mb-2 text-cyan-500 fa-brands fa-linkedin-in"></i> <a href="{{cv_data.linkedin}}"></a>{{cv_data.linkedin}}</li>
+            <li><i class="mb-2 text-cyan-500 fa-brands fa-github"></i> <a href="{{cv_data.github}}"></a>{{cv_data.github}}</li>
+            <li><i class="mb-2 text-cyan-500 fa-solid fa-location-dot"></i> <a href="{{cv_data.location}}"></a>{{cv_data.location}}</li>
         </ul>
     </section>
 
 
-    <section class="my-12">
+    <section class="py-8">
         <h2 class="uppercase text-l font-bold pb-4 tracking-widest">Education</h2>
         <ul>
-            <li>
-                <ul>
-                    <li class="text-xs text-cyan-500">{{page.master_dates}}</li>
-                    <li class="text-sm">{{page.master_title}}</li>
-                    <li class="text-xs">{{page.master_institution}}</li>
-                </ul>
-            </li>
-            <li class="mt-4">
-                <ul>
-                    <li class="text-xs text-cyan-500">{{page.bachelor_dates}}</li>
-                    <li class="text-sm">{{page.bachelor_title}}</li>
-                    <li class="text-xs">{{page.bachelor_institution}}</li>
-                </ul>
-            </li>
+            {% for education in cv_data.education %}
+                <li>
+                    <ul class="my-2">
+                        <li class="text-xs text-cyan-500">{{education.dates}}</li>
+                        <li class="text-sm">{{education.title}}</li>
+                        <li class="text-xs">{{education.institution}}</li>
+                    </ul>
+                </li>
+            {% endfor %}
         </ul>
     </section>
 
-    <section class="my-12">
+    <section class="py-8">
         <h2 class="uppercase text-l font-bold pb-4 tracking-widest">Interests</h2>
-        {% assign interests = page.interests | split: "/" %}
-        {% assign interests_icons = page.interests_icons | split: "/" %}
-        <ul class=" text-sm flex justify-center space-x-4">
-            {% for interest in interests %}
-                <li> <i class="mr-2 text-cyan-500 {{interests_icons[forloop.index0]}}"></i> {{ interest }}</li>
+        <ul class=" text-sm flex flex-wrap justify-center space-x-4">
+            {% for interest in cv_data.interests %}
+                <li> <i class="mr-2 text-cyan-500 {{interest.icon}}"></i> {{ interest.name }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
+
+<div class="bg-gray-100">
+    <section class="py-8">
+        <h2 class="text-gray-500 text-center uppercase text-l font-bold pb-4 tracking-widest">Experience</h2>
+        <ul>
+            {% for experience in cv_data.experience %}
+                <li>
+                    {{experience.dates}}
+                    {{experience.job_title}}
+                    {{experience.company}}
+                    {{experience.location}}
+                    {{experience.description}}
+                    {{experience.tools}}
+
+                </li>
             {% endfor %}
         </ul>
     </section>

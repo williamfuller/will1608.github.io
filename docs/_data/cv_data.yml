@@ -1,0 +1,33 @@
+full_name: William Fuller
+personal_title: Python Developer / Machine learning engineering
+linkedin: www.linkedin.com/in/williamfuller1608
+github: https://github.com/Will1608
+location: Chaville, France
+education:
+    - dates: 2018-2019
+      title: Msc Signal Processing and Communications
+      institution: Imperial College London
+
+    - dates: 2015-2018
+      title: BEng Electronic and Communications Engineering  
+      institution: University of Kent
+
+interests: 
+    - name: Climbing 
+      icon: fa-solid fa-mountain
+    - name: Cylcing 
+      icon: fa-solid fa-bicycle
+    - name: Swimming 
+      icon: fa-solid fa-person-swimming
+
+experience:
+    - dates: Oct 2020 - Present
+      job_title: Machine Learning Engineer
+      company: Instem - Notocord
+      location: Le Pecq, FR
+      tools: ['Python', 'PyTorch', 'Matlab', 'C#', 'Deep Learning', 'Git', 'Agile/Scrum']
+      description: ['Researched and developed EEG only biological analyser for sleep scoring in Python using PyTorch.',
+                    'Implemented biological analyser for heart rate variability into C# framework.',
+                    'Updated legacy analysers written in Delphi into C# framework.']
+
+ 
