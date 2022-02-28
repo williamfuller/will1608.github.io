@@ -44,8 +44,8 @@ layout: default
 
     <section class="my-12">
         <h2 class="uppercase text-l font-bold pb-4 tracking-widest">Interests</h2>
-        {% assign interests = {{page.interests}} | split: "/" %}
-        {% assign interests_icons = {{page.interests_icons}} | split: "/" %}
+        {% assign interests = page.interests | split: "/" %}
+        {% assign interests_icons = page.interests_icons | split: "/" %}
         <ul class=" text-sm flex justify-center space-x-4">
             {% for interest in interests %}
                 <li> <i class="mr-2 text-cyan-500 {{interests_icons[forloop.index0]}}"></i> {{ interest }}</li>
