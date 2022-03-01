@@ -23,8 +23,8 @@ interests:
 experience:
     - dates: Oct 2020 - Present
       job_title: Machine Learning Engineer
-      company: Instem - Notocord
-      location: Le Pecq, FR
+      company: Instem-Notocord
+      location: Le Pecq,FR
       tools: ['Python', 'PyTorch', 'Matlab', 'C#', 'Deep Learning', 'Git', 'Agile/Scrum']
       description: ['Researched and developed EEG only biological analyser for sleep scoring in Python using PyTorch.',
                     'Implemented biological analyser for heart rate variability into C# framework.',
@@ -39,7 +39,7 @@ experience:
       job_title: Python Developer (Internship)
       company: Tictactrip
       location: Paris, FR
-      tools: ['Python', 'Pandas', 'Numpy', 'Typescript', 'NodeJs','PostgreSQL', 'Unit-tests', 'Git', 'Docker']
+      tools: ['Python', 'Pandas', 'Numpy', 'Typescript', 'NodeJs', 'PostgreSQL', 'Unit-tests', 'Git', 'Docker']
       description: ['Implemented scripts for cleaning and integration of new provider data into Database.',
                     'Implemented NodeJs modules for integration of new transporter APIs into websites internal search engine.']
 skills:
