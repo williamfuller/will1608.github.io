@@ -21,7 +21,8 @@ interests:
       icon: fa-solid fa-person-swimming
 
 experience:
-    - dates: Oct 2020 - Present
+    - start_date: Oct 2020
+      end_date: present
       job_title: Machine Learning Engineer
       company: Instem-Notocord
       location: Le Pecq,FR
@@ -29,13 +30,15 @@ experience:
       description: ['Researched and developed EEG only biological analyser for sleep scoring in Python using PyTorch.',
                     'Implemented biological analyser for heart rate variability into C# framework.',
                     'Updated legacy analysers written in Delphi into C# framework.']
-    - dates: Apr 2020 - Jul 2020
+    - start_date: Apr 2020
+      end_date: Jul 2020
       job_title: Python Developer / Data Scientist
       company: Tictactrip
       location: Paris, FR
       tools: ['Python', 'SkLearn', 'Pandas', 'Unit-tests', 'Git', 'Docker', 'Gitlab CI/CD']
       description: ['Designed and implemented an automated tool for data cleaning and removing redundant information, improving search times and data processing overhead.']
-    - dates: Oct 2019 - Apr 2020
+    - start_date: Oct 2019
+      end_date: Apr 2020
       job_title: Python Developer (Internship)
       company: Tictactrip
       location: Paris, FR
