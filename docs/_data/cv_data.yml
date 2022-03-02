@@ -51,7 +51,7 @@ skills:
     - category: Languages
       list: ['English', 'French', 'Spanish']
       level: ['Native', 'Native', 'B1']
-Awards:
+awards:
     - title: Javascript Algorithms and Data Structures
       date: 2021
       issuer: FreeCodeCamp

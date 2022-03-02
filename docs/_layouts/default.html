@@ -3,10 +3,16 @@
   {% include head.html %}
 
   <body>
-    {% include header.html %}
-    <main>
-      <article>{{ content }}</article>
+    <header class="sticky top-0 z-50">
+      {% include header.html %}
+    </header>
+    <main class="relative">
+      {{ content }}
+    </main>
+    <footer>
       {% include footer.html %}
+    </footer>
+
     </main>
   </body>
 </html>
