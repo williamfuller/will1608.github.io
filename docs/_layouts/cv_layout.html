@@ -49,7 +49,7 @@ layout: default
     </div>
     
     <div class="bg-gray-100 py-9 md:col-span-2">
-        <section class="pt-6">
+        <section>
             <h2 class="text-gray-500 text-center uppercase text-lg font-bold pb-4 tracking-widest">Experience</h2>
             <ul>
                 {% for experience in cv_data.experience %}
@@ -86,17 +86,16 @@ layout: default
                 {% endfor %}
             </ul>
         </section>
-    </div>
-    <div class="bg-gray-100 md:py-9 md:col-span-2 lg:col-span-1">
+
         <section>
             <h2 class="text-gray-500 text-center uppercase text-lg font-bold pb-4 tracking-widest">Skills</h2>
             <ul class="pl-8 pr-4">
                 {% for skill_obj in cv_data.skills %}
                     <li>
                         <h3 class="font-bold">{{skill_obj.category}} :</h3>
-                        <div class="flex flex-wrap">
+                        <div class="flex flex-wrap font-bold text-sm ml-2">
                             {% for skill in skill_obj.list %}
-                                <p>{{skill}}
+                                <p class="bg-gray-200 p-2 m-2 rounded">{{skill}}
                                     {% if skill_obj.level %}
                                         : {{skill_obj.level[forloop.index0]}}
                                     {% endif %}
@@ -105,6 +104,20 @@ layout: default
                         </div>
                     </li>
                 {% endfor %}
+            </ul>
+        </section>
+    </div>
+    <div class="bg-gray-100 py-9 md:col-span-2 lg:col-span-1">
+        <section>
+            <h2 class="text-gray-500 text-center uppercase text-lg font-bold pb-4 tracking-widest">Awards & Certificates</h2>
+            <ul class="pl-8 pr-4">
+                <li class="mb-4">
+                    {% for award in cv_data.awards %}
+                        <p class="text-xs text-cyan-500">{{ award.date }} - {{ award.issuer }}</p>
+                        <p class="font-bold">{{ award.title }}</p>
+                        <p class="text-xs">{{ award.description }}</p>
+                    {% endfor %}
+                </li>
             </ul>
         </section>
     </div>
