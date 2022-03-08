@@ -11,8 +11,6 @@ This is project I work on when I have time and is very much still a work in prog
 
 # To Do:
 
-* Style footer and header
-* make CV homepage for now
 * Check for spelling and content mistakes
 * purge CSS (tailwind) before live version
 * make sure build on live will happen correctly
