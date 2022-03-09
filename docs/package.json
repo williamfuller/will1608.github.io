@@ -18,6 +18,6 @@
     "build:dev": "npx postcss ./css/main.css --output ./assets/compiled_css/main.css --env dev && bundle exec jekyll build --config _config_dev.yml",
     "serve:dev": "npx postcss ./css/main.css --output ./assets/compiled_css/main.css --env dev && bundle exec jekyll serve --config _config_dev.yml",
     "build:prod": "npx postcss ./css/main.css --output ./assets/compiled_css/main.css --env production && bundle exec jekyll build",
-    "css:prod": "npx postcss ./css/main.css --output ./assets/compiled_css/main.css --env production",
+    "css:prod": "npx postcss ./css/main.css --output ./assets/compiled_css/main.css --env production"
   }
 }
