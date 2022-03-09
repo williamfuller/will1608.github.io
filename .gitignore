@@ -4,3 +4,4 @@ _site/
 .jekyll-metadata
 package-lock.json
 node_modules/
+assets/compiled_css/
