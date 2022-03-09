@@ -1,9 +1,10 @@
-const cssnano = require('cssnano')({ preset: 'default' })
+const cssnano = require('cssnano')
+const tailwindcss = require('tailwindcss')
+const autoprefixer = require('autoprefixer')
 
-module.exports = {
-  plugins: [
-    require('autoprefixer'),
-    require('tailwindcss')('./tailwind.config.js'),
-    ...(process.env.NODE_ENV === 'production' ? [cssnano] : [])
-  ]
-}
+const plugins =
+  process.env.NODE_ENV === 'production'
+    ? [tailwindcss, autoprefixer, cssnano]
+    : [tailwindcss, autoprefixer]
+
+module.exports = { plugins }
