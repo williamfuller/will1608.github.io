@@ -28,7 +28,7 @@ github_username:  Will1608
 theme: null
 
 include: ['_pages']
-exclude: ['css']
+exclude: ['css', 'node_modules', 'package*.json', '*.config.js', 'Gemfile*']
 
 # Build settings
 plugins:
