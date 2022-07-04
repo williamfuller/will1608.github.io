@@ -30,6 +30,10 @@ theme: null
 include: ['_pages']
 exclude: ['css', 'node_modules', 'package*.json', '*.config.js', 'Gemfile*']
 
+collections:
+  projects:
+    output: true
+    
 # Build settings
 plugins:
   - jekyll-feed

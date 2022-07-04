@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="flex">
+    {% for project in site.projects %} 
+        <div class="text-cyan-500 text-center m-4 py-8 px-4 bg-darkBlue-500 rounded">
+            <h2>
+                {{project.title}}
+            </h2>
+            <p>
+                {{project.description}}
+            </p>
+        </div>
+    {% endfor %}
+</div>
+
