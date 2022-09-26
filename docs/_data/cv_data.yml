@@ -1,8 +1,8 @@
 full_name: William Fuller
 personal_title: Python Developer / Machine learning engineering
-linkedin: www.linkedin.com/in/williamfuller1608
+linkedin: https://linkedin.com/in/williamfuller1608
 github: https://github.com/Will1608
-location: Chaville, France
+location: Paris, France
 education:
     - dates: 2018-2019
       title: Msc Signal Processing and Communications
@@ -27,9 +27,9 @@ experience:
       company: Instem-Notocord
       location: Le Pecq,FR
       tools: ['Python', 'PyTorch', 'Matlab', 'C#', 'Deep Learning', 'Git', 'Agile/Scrum']
-      description: ['Researched and developed EEG only biological analyser for sleep scoring in Python using PyTorch.',
-                    'Implemented biological analyser for heart rate variability into C# framework.',
-                    'Updated legacy analysers written in Delphi into C# framework.']
+      description: ['Researched and developed biological analyser for sleep scoring in Python using PyTorch.',
+                    'Implemented biological analyser for heart rate variability using C#.',
+                    'Updated legacy analysers written in Delphi.']
     - start_date: Apr 2020
       end_date: Jul 2020
       job_title: Python Developer / Data Scientist
@@ -44,7 +44,7 @@ experience:
       location: Paris, FR
       tools: ['Python', 'Pandas', 'Numpy', 'Typescript', 'NodeJs', 'PostgreSQL', 'Unit-tests', 'Git', 'Docker']
       description: ['Implemented scripts for cleaning and integration of new provider data into Database.',
-                    'Implemented NodeJs modules for integration of new transporter APIs into websites internal search engine.']
+                    'Implemented NodeJs modules for integration of new transporter APIs into applications search engine.']
 skills:
     - category: Tech
       list: ['Python', 'Javascript/Typescript', 'Matlab', 'C#', 'PostgreSQL', 'HTML', 'CSS', 'Git', 'Docker', 'Gnu Linux']

@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Projects
-tab_name: projects
+tab_name: projects(WIP)
 permalink: /projects/
 ---
  
