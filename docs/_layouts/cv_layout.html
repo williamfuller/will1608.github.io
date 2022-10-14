@@ -5,7 +5,7 @@ layout: default
 {% assign cv_data = site.data.cv_data %}
 <div class="md:grid md:grid-cols-3 lg:grid-cols-4">   
     <div class="bg-darkBlue-500 text-white text-center py-9 md:row-span-2 lg:row-span-1">
-        <img class="mx-auto rounded-full" src="../assets/img/profil_pic.jpeg" alt="My Profil picture">
+        <img class="scale-90 mx-auto rounded-full" src="../assets/img/profil_pic.png" alt="My Profil picture">
         <section class="py-8 px-4 pb-6 border-b border-gray-600 w-10/12 mx-auto">
             <h1 class="uppercase font-bold text-2xl">{{cv_data.full_name}}</h1>
             <h2 class="uppercase mt-4 text-xs text-gray-300">{{cv_data.personal_title}}</h2>
@@ -16,6 +16,7 @@ layout: default
                 <li><i class="mb-2 mr-2 text-cyan-500 fa-solid fa-envelope"></i> <a href="mailto:{{site.email}}">{{site.email}}</a></li>
                 <li><i class="mb-2 mr-2 text-cyan-500 fa-brands fa-linkedin-in"></i> <a href="{{cv_data.linkedin}}" target="_blank">{{cv_data.linkedin}}</a></li>
                 <li><i class="mb-2 mr-2 text-cyan-500 fa-brands fa-github"></i> <a href="{{cv_data.github}}" target="_blank">{{cv_data.github}}</a></li>
+                <li><i class="mb-2 mr-2 text-cyan-500 fa-solid fa-globe"></i> <a href="{{cv_data.website}}" target="_blank">{{cv_data.website}}</a></li>
                 <li><i class="mb-2 mr-2 text-cyan-500 fa-solid fa-location-dot"></i> {{cv_data.location}}</li>
             </ul>
         </section>
