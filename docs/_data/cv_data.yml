@@ -41,7 +41,7 @@ experience:
                     'Reduced computing costs of data processing system.']
     - start_date: Oct 2019
       end_date: Apr 2020
-      job_title: Python Developer (Internship)
+      job_title: Python / Typescript Developer (Internship)
       company: Tictactrip
       location: Paris, FR
       tools: ['Python', 'Pandas', 'Numpy', 'Typescript', 'NodeJs', 'PostgreSQL', 'Unit-tests', 'Git', 'Docker']
