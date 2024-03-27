@@ -6,7 +6,7 @@ website: will1608.github.io
 location: Paris, France
 education:
     - dates: 2018-2019
-      title: Msc Signal Processing and Communications
+      title: Msc Signal Processing, and Communications
       institution: Imperial College London
 
     - dates: 2015-2018              
@@ -22,8 +22,17 @@ interests:
       icon: fa-solid fa-person-swimming
 
 experience:
+    - start_date: Feb 2023
+      end_date: Current
+      job_title: Software Engineer
+      company: SUPER G
+      location: Paris,FR
+      tools: ['Go', 'React', 'PostgreSQL', 'TypeScript', 'JavaScript']
+      description: ['End to end feature development from design to technical implementation',
+                    'Fullstack development',
+                    'Small collaborative team, working onsite together']
     - start_date: Oct 2020
-      end_date: present
+      end_date: Jan 2023
       job_title: Machine Learning Engineer
       company: Instem-Notocord
       location: Le Pecq,FR
