@@ -27,7 +27,7 @@ experience:
       job_title: Software Engineer
       company: SUPER G
       location: Paris,FR
-      tools: ['Go', 'React', 'PostgreSQL', 'TypeScript', 'JavaScript']
+      tools: ['Go', 'React', 'PostgreSQL', 'Typescript', 'Javascript']
       description: ['End to end feature development from design to technical implementation',
                     'Fullstack development',
                     'Small collaborative team, working onsite together']
@@ -60,7 +60,7 @@ experience:
                     'Implemented NodeJs modules for integration of new transporter APIs into applications search engine.']
 skills:
     - category: Tech
-      list: ['Python', 'Javascript/Typescript', 'C#', 'Matlab', 'PostgreSQL', 'HTML', 'CSS', 'Git', 'Docker', 'Gnu Linux']
+      list: ['Go', 'React', 'Python', 'Typescript/Javascript', 'C#', 'PostgreSQL', 'Git', 'Linux']
     - category: Languages
       list: ['English', 'French', 'Spanish']
       level: ['Native', 'Native', 'B1']
