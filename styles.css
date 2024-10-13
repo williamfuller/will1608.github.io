@@ -43,18 +43,18 @@ body{
 }
 
 .container {
-	border-bottom: 3px solid black;
+	border-bottom: 2px solid black;
 }
 
 .content-block {
 	max-width: 72rem;
 	margin-inline: auto;
-	border-inline: 3px solid black;
+	border-inline: 2px solid black;
 	padding-inline: 1rem;
 }
 
 .boxed-start {
-	border-right: 3px solid black;
+	border-right: 2px solid black;
 	height: 100%;
 	display: flex;
 	align-items: center;
