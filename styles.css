@@ -1,0 +1,124 @@
+@font-face {
+	font-family: "inter";
+	src: url("Inter-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "inter";
+	src: url("Inter-SemiBold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "inter";
+	src: url("Inter-Bold.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+}
+
+:root {
+	--background: #f0eadb;
+	--highlight: #B97A95;
+	--secondary: #ccffd9;
+	font-family: "inter", sans-serif;
+}
+
+@media print {
+ nav, footer {
+	display: none !important;
+ }
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--background);
+}
+
+.container {
+	border-bottom: 3px solid black;
+}
+
+.content-block {
+	max-width: 72rem;
+	margin-inline: auto;
+	border-inline: 3px solid black;
+	padding-inline: 1rem;
+}
+
+.boxed-start {
+	border-right: 3px solid black;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-right: 1rem;
+}
+
+
+header, footer {
+	height: 2.5rem;
+}
+
+nav {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+
+nav ul {
+	display: flex;
+	column-gap: 1rem;
+	list-style: none;
+}
+
+a {
+color: var(--highlight);
+}
+.main-header {
+	background-color: var(--secondary);
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	padding: 4rem;
+}
+
+.links-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	font-weight: bold;
+}
+
+.subtext{
+	font-size: small;
+	color: #555;
+}
+
+#experience-skills {
+	display: grid;
+	grid-template-columns: 50rem auto;
+}
+
+footer {
+	height: 2.5rem;
+}
+
+footer > div {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+footer p {
+	border-left: 2px solid black;
+	height: 100%;
+}
