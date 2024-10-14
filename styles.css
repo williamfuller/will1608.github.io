@@ -109,6 +109,13 @@ color: var(--highlight);
 	grid-template-columns: auto 20rem;
 }
 
+@media (max-width: 1024px) {
+	#experience-skills {
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	}
+}
+
 footer {
 	height: 2.5rem;
 }
