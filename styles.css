@@ -23,12 +23,19 @@
 	--background: #f0eadb;
 	--highlight: #B97A95;
 	--secondary: #ccffd9;
+	--content-width: 72rem;
+	--default-padding: 1rem;
+	--default-border:  2px solid black;
 	font-family: "inter", sans-serif;
 }
 
 @media print {
  nav, footer {
 	display: none !important;
+ }
+
+ * {
+	 border: none !important;
  }
 }
 
@@ -43,22 +50,22 @@ body{
 }
 
 .container {
-	border-bottom: 2px solid black;
+	border-bottom: var(--default-border);
 }
 
 .content-block {
-	max-width: 72rem;
+	max-width: var(--content-width);
 	margin-inline: auto;
-	border-inline: 2px solid black;
-	padding-inline: 1rem;
+	border-inline: var(--default-border);
+	padding-inline: var(--default-padding);
 }
 
 .boxed-start {
-	border-right: 2px solid black;
+	border-right: var(--default-border);
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding-right: 1rem;
+	padding-right: var(--default-padding);
 }
 
 
@@ -76,7 +83,7 @@ nav {
 
 nav ul {
 	display: flex;
-	column-gap: 1rem;
+	column-gap: var(--default-padding);
 	list-style: none;
 }
 
@@ -88,14 +95,14 @@ color: var(--highlight);
 	background-color: var(--secondary);
 	display: flex;
 	flex-direction: column;
-	row-gap: 1rem;
+	row-gap: var(--default-padding);
 	padding: 4rem;
 }
 
 .links-container {
 	display: flex;
 	flex-direction: column;
-	row-gap: 1rem;
+	row-gap: var(--default-padding);
 	font-weight: bold;
 }
 
@@ -105,14 +112,30 @@ color: var(--highlight);
 }
 
 #experience-skills {
-	display: grid;
-	grid-template-columns: auto 20rem;
+	display:flex;
+	flex-wrap: wrap;
+	gap: var(--default-padding);
+	margin-inline: calc(-1 * var(--default-padding));
 }
 
+#experience-skills h1 {
+	padding-top: var(--default-padding);
+	padding-bottom: var(--default-padding);
+	border-bottom: var(--default-border);
+}
+
+#experiences {
+	max-width: calc(2*var(--content-width)/3);
+}
+
+#skills{
+	min-width: calc(var(--content-width)/3);
+}
+
+
 @media (max-width: 1024px) {
-	#experience-skills {
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto;
+	#experiences {
+	 border-bottom: var(--default-border);
 	}
 }
 
@@ -127,6 +150,6 @@ footer > div {
 }
 
 footer p {
-	border-left: 2px solid black;
+	border-left: var(--default-border);
 	height: 100%;
 }
