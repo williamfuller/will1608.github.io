@@ -115,28 +115,15 @@ color: var(--highlight);
 	display:flex;
 	flex-wrap: wrap;
 	gap: var(--default-padding);
-	margin-inline: calc(-1 * var(--default-padding));
 }
 
 #experience-skills h1 {
 	padding-top: var(--default-padding);
 	padding-bottom: var(--default-padding);
-	border-bottom: var(--default-border);
 }
 
 #experiences {
 	max-width: calc(2*var(--content-width)/3);
-}
-
-#skills{
-	min-width: calc(var(--content-width)/3);
-}
-
-
-@media (max-width: 1024px) {
-	#experiences {
-	 border-bottom: var(--default-border);
-	}
 }
 
 footer {
