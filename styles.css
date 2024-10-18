@@ -20,9 +20,9 @@
 }
 
 :root {
-	--background: #f0eadb;
-	--highlight: #B97A95;
-	--secondary: #ccffd9;
+	--background: #FEFDED;
+	--highlight: #FA7070;
+	--secondary: #C6EBC5;
 	--content-width: 72rem;
 	--default-padding: 1rem;
 	--default-border:  2px solid black;
@@ -57,7 +57,6 @@ body{
 	max-width: var(--content-width);
 	margin-inline: auto;
 	border-inline: var(--default-border);
-	padding-inline: var(--default-padding);
 }
 
 .boxed-start {
@@ -65,7 +64,9 @@ body{
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding-right: var(--default-padding);
+	padding-inline: var(--default-padding);
+	background-color: var(--highlight);
+	color: white;
 }
 
 
@@ -85,10 +86,16 @@ nav ul {
 	display: flex;
 	column-gap: var(--default-padding);
 	list-style: none;
+	padding-right: var(--default-padding);
 }
 
 a {
-color: var(--highlight);
+	text-decoration: none;
+	color: var(--highlight);
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .main-header {
