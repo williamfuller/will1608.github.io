@@ -3,6 +3,7 @@
 	src: url("Inter-Regular.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
+	font-display: fallback ;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
 	src: url("Inter-SemiBold.woff2") format("woff2");
 	font-weight: bold;
 	font-style: normal;
+	font-display: fallback ;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
 	src: url("Inter-Bold.woff2") format("woff2");
 	font-weight: 900;
 	font-style: normal;
+	font-display: fallback ;
 }
 
 :root {
