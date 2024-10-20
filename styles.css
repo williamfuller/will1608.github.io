@@ -32,16 +32,6 @@
 	font-family: "inter", sans-serif;
 }
 
-@media print {
- nav, footer, #download-btn {
-	display: none !important;
- }
-
- * {
-	 border: none !important;
- }
-}
-
 * {
 	padding: 0;
 	margin: 0;
@@ -67,17 +57,13 @@ body{
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding-inline: var(--default-padding);
+	padding: var(--default-padding);
 	background-color: var(--highlight);
 	color: white;
 }
 
 ul {
 	padding-left: var(--default-padding);
-}
-
-header, footer {
-	height: 2.5rem;
 }
 
 nav {
@@ -111,7 +97,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	row-gap: var(--default-padding);
-	padding: 4rem;
+	padding: calc(3 * var(--default-padding));
 }
 
 #download-btn {
@@ -146,7 +132,7 @@ a:hover {
 	border-right: var(--default-border);
 }
 
-#skills {
+#skills, #experiences {
  flex-grow: 1;
 }
 
@@ -154,24 +140,69 @@ a:hover {
 	padding: var(--default-padding);
 }
 
-@media (max-width: 1024px) {
-	#experiences {
-		border-right: none;
-		border-bottom: var(--default-border);
-	}
+#projects {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
-footer {
-	height: 2.5rem;
+#projects > div {
+	border-bottom: var(--default-border);
+	padding: var(--default-padding);
+}
+
+#projects > div:nth-last-child(-n+2) {
+	border-bottom: none;
+}
+
+#projects > div:nth-child(odd) {
+ border-right: var(--default-border);
+}
+
+#projects h3 {
+	padding-bottom: var(--default-padding);
 }
 
 footer > div {
 	display: flex;
-	justify-content: end;
 	align-items: center;
 }
 
-footer p {
-	border-left: var(--default-border);
-	height: 100%;
+footer > div > * {
+	border-right: var(--default-border);
+	padding: var(--default-padding);
+}
+
+@media print {
+ nav, footer, #download-btn {
+	display: none !important;
+ }
+
+ * {
+	 border: none !important;
+ }
+
+ .main-header {
+		padding: var(--default-padding);
+ }
+}
+
+@media (max-width: 1024px) {
+	#experiences {
+		border-right: none;
+		max-width: none;
+		border-bottom: var(--default-border);
+	}
+
+	#projects {
+		grid-template-columns: 1fr;		
+	}
+
+	#projects > div{
+		border-bottom: var(--default-border) !important;
+		border-right: none !important;
+	}
+	
+	#projects > div:last-child{
+		border-bottom: none !important;
+	}
 }
