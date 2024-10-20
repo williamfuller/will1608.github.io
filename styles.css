@@ -33,7 +33,7 @@
 }
 
 @media print {
- nav, footer {
+ nav, footer, #download-btn {
 	display: none !important;
  }
 
@@ -72,6 +72,9 @@ body{
 	color: white;
 }
 
+ul {
+	padding-left: var(--default-padding);
+}
 
 header, footer {
 	height: 2.5rem;
@@ -94,6 +97,7 @@ nav ul {
 
 a {
 	text-decoration: none;
+	font-weight: bold;
 	color: var(--highlight);
 }
 
@@ -102,6 +106,7 @@ a:hover {
 }
 
 .main-header {
+	position: relative;
 	background-color: var(--secondary);
 	display: flex;
 	flex-direction: column;
@@ -109,11 +114,16 @@ a:hover {
 	padding: 4rem;
 }
 
+#download-btn {
+	position: absolute;
+	top: var(--default-padding);
+	right: var(--default-padding);
+}
+
 .links-container {
 	display: flex;
 	flex-direction: column;
 	row-gap: var(--default-padding);
-	font-weight: bold;
 }
 
 .subtext{
@@ -124,16 +134,31 @@ a:hover {
 #experience-skills {
 	display:flex;
 	flex-wrap: wrap;
-	gap: var(--default-padding);
 }
 
 #experience-skills h1 {
-	padding-top: var(--default-padding);
-	padding-bottom: var(--default-padding);
+	padding: var(--default-padding);
+	border-bottom: var(--default-border);
 }
 
 #experiences {
 	max-width: calc(2*var(--content-width)/3);
+	border-right: var(--default-border);
+}
+
+#skills {
+ flex-grow: 1;
+}
+
+.experience, .skill-section {
+	padding: var(--default-padding);
+}
+
+@media (max-width: 1024px) {
+	#experiences {
+		border-right: none;
+		border-bottom: var(--default-border);
+	}
 }
 
 footer {
