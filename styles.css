@@ -197,6 +197,8 @@ footer > div > * {
 
  * {
 	 border: none !important;
+	 -webkit-print-color-adjust: exact;
+	 print-color-adjust: exact;
  }
 
  .main-header {
